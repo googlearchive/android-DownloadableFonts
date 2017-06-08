@@ -31,18 +31,10 @@ internal class QueryBuilder(val familyName: String,
         }
         val builder = StringBuilder()
         builder.append("name=").append(familyName)
-        if (weight != null) {
-            builder.append("&weight=").append(weight)
-        }
-        if (width != null) {
-            builder.append("&width=").append(width)
-        }
-        if (italic != null) {
-            builder.append("&italic=").append(italic)
-        }
-        if (besteffort != null) {
-            builder.append("&besteffort=").append(besteffort)
-        }
+        weight?.let { builder.append("&weight=").append(weight) }
+        width?.let { builder.append("&width=").append(width) }
+        italic?.let { builder.append("&italic=").append(italic) }
+        besteffort?.let { builder.append("&besteffort=").append(besteffort) }
         return builder.toString()
     }
 }

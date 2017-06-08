@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 'android-O'
+    compileSdkVersion 26
     buildToolsVersion "26.0.0 rc2"
 
     defaultConfig {
@@ -10,8 +10,8 @@ android {
         // Once API level 26 SDK is launched, lower the minSdkVersion.
         // At this moment, an app targeting the preview version of the SDK only runs on the
         // preview device.
-        minSdkVersion 'O'
-        targetSdkVersion 'O'
+        minSdkVersion 26
+        targetSdkVersion 26
     }
 
     buildTypes {
