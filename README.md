@@ -63,22 +63,14 @@ first attempt.
 </application>
 ```
 
-Note that the sample uses Google Play Services as a font provider, which requires pre-released
-version of Google Play Services.
-You can sign up for the beta program so that the beta version of Google Play Services is
-downloaded to your device. https://developers.google.com/android/guides/beta-program
-If you have Google Play Services whose version number is equal or above 11.x.x, that means you
-have the compatible version installed. (You can confirm by navigating to
-Settings -> Apps -> Google Play Services)
-
 [1]: https://developer.android.com/reference/android/support/v4/provider/FontRequest.html
 [2]: https://developer.android.com/reference/android/support/v4/provider/FontsContractCompat.html
 
 Pre-requisites
 --------------
 
-- Android SDK 25
-- Android Build Tools v25.0.3
+- Android SDK 26
+- Android Build Tools v26.0.1
 - Android Support Repository
 
 Screenshots

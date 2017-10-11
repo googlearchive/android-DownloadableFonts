@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
+ext {
+    supportLibVersion = '26.0.1'
+}
+
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.0 rc2"
+    buildToolsVersion "26.0.1"
 
     defaultConfig {
         applicationId "com.example.android.downloadablefonts"
-        // Once API level 26 SDK is launched, lower the minSdkVersion.
-        // At this moment, an app targeting the preview version of the SDK only runs on the
-        // preview device.
-        minSdkVersion 26
+        minSdkVersion 14
         targetSdkVersion 26
     }
 
@@ -21,8 +22,8 @@ android {
     }
 
     dependencies {
-        compile 'com.android.support:appcompat-v7:26.0.0-beta1'
-        compile 'com.android.support:design:26.0.0-beta1'
-        compile 'com.android.support:cardview-v7:26.0.0-beta1'
+        compile "com.android.support:appcompat-v7:$supportLibVersion"
+        compile "com.android.support:design:$supportLibVersion"
+        compile "com.android.support:cardview-v7:$supportLibVersion"
     }
 }
